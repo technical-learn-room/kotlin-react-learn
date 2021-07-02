@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kotlin-react-learn-1.0-SNAPSHOT">
+    <output-path>C:\Users\user\Desktop\Commit\technical-learn-room\kotlin-react-learn\build\libs</output-path>
+    <root id="archive" name="kotlin-react-learn-1.0-SNAPSHOT.jar">
+      <element id="module-output" name="kotlin-react-learn.main" />
+    </root>
+  </artifact>
+</component>
