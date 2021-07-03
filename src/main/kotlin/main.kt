@@ -6,13 +6,8 @@ import react.dom.a
 import styled.css
 import styled.styledDiv
 
-external interface WelcomeProps : RProps
-
-data class ToDoListState(val name: String) : RState
-
 @JsExport
-class ToDoList : RComponent<WelcomeProps, ToDoListState>() {
-
+class Main : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         styledDiv {
             css {
@@ -20,21 +15,17 @@ class ToDoList : RComponent<WelcomeProps, ToDoListState>() {
                 + MainStyles.textCenterAlignment
             }
             a {
-                + "TO DO LIST"
+                +"TO DO LIST"
             }
         }
+        toDoList()
         styledDiv {
             css {
-                + MainStyles.todoListBody
+                +MainStyles.footer
+                +MainStyles.textCenterAlignment
             }
-        }
-        styledDiv {
-            css {
-                + MainStyles.footer
-                + MainStyles.textCenterAlignment
-            }
-            a(href = "https://logos-download.com/wp-content/uploads/2016/09/GitHub_logo.png") {
-                + "GITHUB"
+            a(href = "https://github.com/technical-learn-room/kotlin-react-learn") {
+                +"GITHUB"
             }
         }
     }
