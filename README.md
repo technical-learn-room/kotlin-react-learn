@@ -1,7 +1,8 @@
 # 코틀린으로 리액트 프로그래밍하기!
 ![kotlin react image](https://user-images.githubusercontent.com/48639421/124257806-b2094b00-db67-11eb-8da6-87e764023b60.png)
 
-> 코틀린으로 리액트 프로그래밍을 하시기 전에 `수신 객체 지정 람다`와 `프로퍼티 위임(by)`에 대해서 미리 선생하시는 걸 추천드립니다.
+> 코틀린으로 리액트 프로그래밍을 하시기 전에  
+> `수신 객체 지정 람다`와 `프로퍼티 위임(by)`에 대해서 미리 선생하시는 걸 추천드립니다.  
 
 ## 컴포넌트 생성하기
 ```kotlin
@@ -17,7 +18,8 @@ class TestComponent : RComponent<RProps, RState>() {
 }
 ```
 컴포넌트를 생성하기 위해서는 `RComponent`를 상속받는 클래스를 만들면 됩니다.  
-그리고 `RBuilder.render()` 확장 함수를 오버라이딩하고 `HTML Kotlin DSL`을 이용하여 마음껏 코드를 작성하시면 됩니다.  
+그리고 `RBuilder.render()` 확장 함수를 오버라이딩하고  
+`HTML Kotlin DSL`을 이용하여 마음껏 코드를 작성하시면 됩니다.  
 
 ## 컴포넌트 조립하기
 ```kotlin
