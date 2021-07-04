@@ -23,16 +23,13 @@ class ToDoList: RComponent<RProps, ToDoListState>() {
                     attrs {
                         index = messageNumber + 1
                         message = m
+                        toDoListReference = this@ToDoList
                     }
                 }
             }
             toDoInsertion {
                 attrs {
-                    toDoList = this@ToDoList
-//                    onInsert = {
-//                        setState(ToDoListState(state.toDoMessages + "a"))
-//                        console.log(state.toDoMessages)
-//                    }
+                    toDoListReference = this@ToDoList
                 }
             }
         }

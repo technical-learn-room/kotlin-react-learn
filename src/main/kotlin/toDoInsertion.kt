@@ -12,7 +12,7 @@ import styled.styledButton
 import styled.styledInput
 
 external interface ToDoInsertionProps : RProps {
-    var toDoList: ToDoList
+    var toDoListReference: ToDoList
 }
 
 data class ToDoInsertionState(
@@ -48,14 +48,11 @@ class ToDoInsertion : RComponent<ToDoInsertionProps, ToDoInsertionState>() {
                 attrs {
                     type = ButtonType.submit
                     onClickFunction = {
-                        val newToDoList = props.toDoList.state.toDoMessages + state.toDoMessage
-                        props.toDoList.setState(ToDoListState(newToDoList))
+                        val newToDoList = props.toDoListReference.state.toDoMessages + state.toDoMessage
+                        props.toDoListReference.setState(ToDoListState(newToDoList))
                     }
                 }
                 +"생성"
-            }
-            attrs {
-
             }
         }
     }
