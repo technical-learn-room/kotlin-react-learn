@@ -7,7 +7,7 @@ data class ToDoListState(
 ) : RState
 
 @JsExport
-class ToDoList: RComponent<RProps, ToDoListState>() {
+class ToDoList : RComponent<RProps, ToDoListState>() {
 
     init {
         state = ToDoListState(listOf("test", "test2", "test3"))
