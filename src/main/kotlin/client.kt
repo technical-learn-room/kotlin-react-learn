@@ -5,10 +5,7 @@ import kotlinx.browser.window
 fun main() {
     window.onload = {
         render(document.getElementById("root")) {
-            child(Main::class) {
-                attrs {
-                }
-            }
+            child(Main::class) {}
         }
     }
 }
