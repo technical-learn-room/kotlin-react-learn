@@ -159,3 +159,9 @@ class AComponent : RComponent<AComponentProps, AComponentState>() {
 `styled...` 태그 안에는 `css()` 함수를 사용할 수 있도록 `CSSBuilder`가 생성됩니다.  
 
 > +로 연결되는 것은 내부적으로 연산자 오버로딩이 되어 있기 때문입니다.
+
+## Library & Framework
+- kotlin/js - 1.5.10
+- kotlin react - 17.0.1-pre.148-kotlin-1.4.30
+- kotlin react dom - 17.0.1-pre.148-kotlin-1.4.30
+- kotlin styled - 5.2.1-pre.148-kotlin-1.4.30
