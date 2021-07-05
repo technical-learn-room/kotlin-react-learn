@@ -165,3 +165,19 @@ class AComponent : RComponent<AComponentProps, AComponentState>() {
 - kotlin react - 17.0.1-pre.148-kotlin-1.4.30
 - kotlin react dom - 17.0.1-pre.148-kotlin-1.4.30
 - kotlin styled - 5.2.1-pre.148-kotlin-1.4.30
+
+## ToDoList Structure
+```
+src
+  ㄴ main
+      ㄴ kotlin
+          ㄴ MainStyles.kt      ] - Styled Component 형식으로 정리한 스타일 객체
+          ㄴ ToDoListStyles.kt  ]
+          ㄴ client.kt - 이후에 나오는 컴포넌트들을 root 아래에 두기 위한 기초 컴포넌트
+          ㄴ main.kt - ToDoList의 메인 화면 컴포넌트
+          ㄴ toDo.kt - ToDoList 내부의 ToDo를 담당하는 컴포넌트
+          ㄴ toDoInsertion.kt - ToDo를 생성하기 위한 input 컴포넌트
+          ㄴ toDoList.kt - ToDoList의 몸체 
+      ㄴ resources
+          ㄴ index.html - 빌드 후 생성된 kotlin-react.learn.js 스크립트를 실행할 기초 HTML
+```
